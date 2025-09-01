@@ -1,0 +1,4 @@
+name: Mediumcore
+version: '1.0'
+main: org.deltanoise.mediumcore.Mediumcore
+api-version: '1.21'
