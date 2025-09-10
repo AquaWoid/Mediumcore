@@ -1,4 +1,20 @@
+#Instructions
+# Modes selection:
+#  "ban" = player gets banned for the specified duration after loosing all lives.
+#  "spectator" = player gets moved to spectator gamemode instead of being banned.
+# Commands:
+#   allowReset: Allows the resetlives command to be used by players (they still permission)
+
+#Command Permissions
+# ResetLives: livehandling
+# CheckLives: livechecking
+
 lives:
   value: 3
 banDuration:
   value: 24
+mode:
+  value: "ban"
+commands:
+  allowReset: false
+

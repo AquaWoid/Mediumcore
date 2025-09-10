@@ -1,5 +1,7 @@
 package org.deltanoise.mediumcore;
 
+import Commands.CheckLives;
+import Commands.ResetLives;
 import Handlers.DeathHandling;
 import Persistence.DataStorage;
 import org.bukkit.Bukkit;
@@ -18,6 +20,16 @@ public final class Mediumcore extends JavaPlugin {
         saveDefaultConfig();
         persistentData = new DataStorage(this);
         new DeathHandling(this,persistentData);
+
+
+        try {
+            getCommand("resetlives").setExecutor((new ResetLives(persistentData)));
+            getCommand("checklives").setExecutor(new CheckLives(persistentData));
+        } catch (Exception e) {
+            getLogger().info("Error:" + e);
+        }
+
+
     }
 
     @Override

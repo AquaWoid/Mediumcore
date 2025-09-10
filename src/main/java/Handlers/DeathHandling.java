@@ -17,6 +17,7 @@ public class DeathHandling implements Listener {
 
     int banDuration = 1;
     DataStorage persistentData;
+    String mode = "ban";
 
     public DeathHandling(Mediumcore plugin, DataStorage data) {
         Bukkit.getPluginManager().registerEvents(this, plugin);

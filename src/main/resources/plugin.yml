@@ -2,3 +2,16 @@ name: Mediumcore
 version: '1.0'
 main: org.deltanoise.mediumcore.Mediumcore
 api-version: '1.21'
+commands:
+  resetlives:
+    description: Reset lives of chosen player
+    usage: /resetlives
+    aliases: rl
+    permission: livehandling
+  checklives:
+    description: Check own live count
+    usage: /checklives
+    aliases: cl
+    permission: livecheck
+
+
